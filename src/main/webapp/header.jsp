@@ -13,6 +13,7 @@
 		session.setAttribute("loginState", "logout");
 		session.setAttribute("userid", null);
 		session.setAttribute("userpw", null);
+		
 	}
 %>
 
@@ -40,6 +41,10 @@
 		    <input type="submit" value="로그인">
 		 </form>
 		 
+		 <input type="button" value ="회원가입" onclick="location.href='./signup.jsp'">
+		 </td>
+		 
+		 
 <%
 			if(session.getAttribute("loginState").equals("errorID")){
 				out.print("[사용자ID오류]");
@@ -48,9 +53,7 @@
 			if(session.getAttribute("loginState").equals("errorPW")){
 				out.print("[사용자PW오류]");
 			}
-			%>
-			<input type="button" value ="회원가입" onclick="location.href='./signup.jsp'">
-			<%
+
 		}
 %>		
 

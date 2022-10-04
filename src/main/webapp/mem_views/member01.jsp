@@ -9,8 +9,10 @@
 <body>
 <%@ include file="../header.jsp" %>
 
-<img src="../images/member01.PNG" width="1024"/>
-<h1>MEMBER01 페이지 호출 결과</h1>
+
+<h1>회원정보 조회 및 수정</h1>
+
+
 <a href="../index.jsp">메인으로 돌아가기</a>
 
 <%@ include file="../footer.jsp" %>

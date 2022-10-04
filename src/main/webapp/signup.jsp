@@ -15,7 +15,9 @@
 			이름을 입력하세요 : <input type="text" name="mem_name">
 		</div>
 		<div>
-			아이디를 입력하세요 : <input type="text" name="mem_id">
+			아이디를 입력하세요 : <input type="text" name="mem_id"> 
+			<input type ="button" value="중복확인">	
+			
 		</div>
 		<div>
 			비밀번호를 입력하세요 : <input type="password" name="mem_passwd">
@@ -24,10 +26,13 @@
 			이메일을 입력하세요 : <input type="email" name="mem_email">
 		</div>
 		<div>
-			전화번호을 입력하세요 : <input type="number" name="mem_phone" maxlength="11">
+			전화번호을 입력하세요 : <input type="text" name="mem_phone0" maxlength="3" size = "6"/> 
+			-<input type="text" name="mem_phone1" maxlength="4" size = "8"/> 
+			-<input type="text" name="mem_phone2" maxlength="4" size = "8"/> 
 		</div>
 		<div>
-			주민등록번호을 입력하세요 : <input type="number" name="mem_RRN" maxlength="13">
+			주민등록번호을 입력하세요 : <input type="text" name="mem_RRN0" maxlength="6" size="12">
+			-<input type="text" name="mem_RRN1" maxlength="7" size="14">
 		</div>
 		<input type="hidden" name="actionType" value="SIGNUP"> <input
 			type="submit" value="회원가입">
