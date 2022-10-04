@@ -1,0 +1,9 @@
+
+.classpath
+.project
+.settings/.jsdtscope
+*.prefs
+*.component
+*.xml
+*.container
+*.name
