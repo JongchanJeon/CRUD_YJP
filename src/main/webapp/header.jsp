@@ -48,12 +48,12 @@
 			if(session.getAttribute("loginState").equals("errorPW")){
 				out.print("[사용자PW오류]");
 			}
+			%>
+			<input type="button" value ="회원가입" onclick="location.href='./signup.jsp'">
+			<%
 		}
 %>		
-	<td>
-		<input type="button" value ="회원가입">
-		
-	 </td>
+
  </tr>
 </table>
 <%
