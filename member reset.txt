@@ -1,0 +1,17 @@
+drop database member_db;
+create database member_db;
+use member_db;
+
+create table member(
+mem_num int not null auto_increment primary key,
+mem_name varchar(30) not null,
+mem_id varchar(30) not null unique,
+mem_passwd varchar(30) not null,
+mem_email varchar(30) unique,
+mem_phone varchar(30),
+mem_RRN varchar(30) not null unique,
+mem_class int default 100 not null);
+
+
+insert into member(mem_name, mem_id, mem_passwd, mem_email, mem_phone, mem_RRN) values(
+'홍길동', 'kdhong', '1234','kdhong@gmail.com', '010-1234-5678', '970101-1490211');
