@@ -7,7 +7,7 @@ function updateCheck() {
 	{return false;}
 }
 
-function checkRRN() {
+function checkRRN() { // 작동함
 	let sum = 0;
 	let count = 2;
 	let lastRRN = 0;
