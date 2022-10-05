@@ -6,6 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+
 </head>
 <body>
 <%
@@ -24,7 +25,7 @@
 <%
 		String mem_name;
 		String mem_id = (String) session.getAttribute("userid");
-		String mem_passwd = (String) session.getAttribute("userpw");
+		String mem_passwd;
 		String mem_email;
 		String mem_phone;
 		String mem_RRN;
@@ -37,6 +38,8 @@
 		rs = stmt.executeQuery(sql);
 		while (rs.next()) {
 			System.out.println(rs.getString("mem_name"));
+			mem_id = rs.getString("mem_id");
+			mem_passwd = rs.getString("mem_passwd");
 			mem_name = rs.getString("mem_name");
 			mem_email = rs.getString("mem_email");
 			mem_phone = rs.getString("mem_phone");
@@ -50,7 +53,7 @@
 			<br>휴대전화 : <input type="text" name = "mem_phone" size ="30" maxlength="11" value = <%="'" + mem_phone + "'" %>>
 			<br>주민등록번호 : <input type="text" name = "mem_RRN" size ="30" maxlength="13" value = <%="'" + mem_RRN + "'" %>readonly>
 			<br><input type ="hidden" name = "actionType" value="MEMBER_R">
-			<br><input type ="submit" value="수정">
+			<br><input type ="submit" value="수정" onclick="if(!confirm('수정하시겠습니까?')){return false;}"/>
 		</form>
 <%
 		}

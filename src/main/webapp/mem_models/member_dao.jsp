@@ -141,13 +141,14 @@
 			session.setAttribute("userclass", "GHOST");
 			break;
 		case "MEMBER_R":
-			mem_id = (String) session.getAttribute("mem_id");
-			mem_passwd = (String) session.getAttribute("mem_passwd");
+			mem_id = request.getParameter("mem_id");
+			mem_passwd = request.getParameter("mem_passwd");
 			mem_name = request.getParameter("mem_name");
 			mem_email = request.getParameter("mem_email");
 			mem_phone = request.getParameter("mem_phone");
 			mem_RRN = request.getParameter("mem_RRN");
-			
+
+		
 			sql = "update member set mem_passwd='" + mem_passwd + "', mem_email='" + mem_email + "',mem_phone='" + mem_phone + "' " ;
 			sql += "where mem_id ='" + mem_id + "'";
 			System.out.println(sql);
