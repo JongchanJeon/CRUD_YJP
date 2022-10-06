@@ -8,7 +8,7 @@ function updateCheck() {
 }
 
 function checkRRN() {
-	alert("진입");
+
 	let sum = 0;
 	let count = 2;
 	let lastRRN = 0;
@@ -29,7 +29,7 @@ function checkRRN() {
 	if(mem_RRN[12] == lastRRN){
 		alert("사용자 인증이 되었습니다.");
 	}else {
-		alert("주민등록번호가 잘 못 되었습니다.");
+		alert("사용자 인증에 실패하였습니다!");
 	}
 	
 }

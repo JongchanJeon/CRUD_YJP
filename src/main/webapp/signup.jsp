@@ -34,7 +34,8 @@
 		<div>
 			주민등록번호을 입력하세요 : <input type="text" id="mem_RRN0" name="mem_RRN0" maxlength="6" size="12">
 			-<input type="text" id="mem_RRN1" name="mem_RRN1" maxlength="7" size="14">
-			<input type ="button" name ="checkRRN" onclick="window.checkRRN();" value = "사용자 인증"/> <!--  작동안됨 -->
+			<input type ="button" name ="checkRRN" onclick="window.checkRRN();" value = "사용자 인증"/>
+			
 		</div>
 		<input type="hidden" name="actionType" value="SIGNUP"> <input
 			type="submit" value="회원가입">

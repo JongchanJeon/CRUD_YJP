@@ -35,8 +35,6 @@
 	String mem_class;
 	String sql;
 	String checkClass;
-	String userID_DUMMY = "kdhong";
-	String userPW_DUMMY = "1234";
 	
 	int loginState;
 
@@ -121,17 +119,6 @@
 					e.printStackTrace();
 				}
 			}
-
-
-		    /* if( userID.equals(userID_DUMMY)){
-		    	if( userPW.equals(userPW_DUMMY)){
-		    		
-		    	}else{
-		    		session.setAttribute("loginState", "errorPW");
-		    	}
-		    }else{
-		    	session.setAttribute("loginState", "errorID");
-		    } */
 		    break;
 		    
 		case "LOGOUT":
